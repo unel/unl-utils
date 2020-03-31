@@ -7,7 +7,7 @@ class Connection {
 		this.dataListeners.add(listener);
 	}
 
-	notify(data: any): void {
+	private notify(data: any): void {
 		for (const listener of this.dataListeners) {
 			try {
 				listener(data);
@@ -15,6 +15,10 @@ class Connection {
 				console.warn("Error occured when notifying data listener", e);
 			}
 		}
+	}
+
+	destroy() {
+		console.warn("connection was destroyed");
 	}
 }
 
