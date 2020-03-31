@@ -7,11 +7,15 @@
 		"sourceMap": true,
 		"allowJs": true,
 		"downlevelIteration": true,
+		"types": [
+			"dom",
+			"jest"
+		],
 		"lib": [
 			"es6",
 			"dom"
 		],
 		"rootDir": "src",
-		"moduleResolution": "node"
+		"moduleResolution": "classic"
 	}
 }
