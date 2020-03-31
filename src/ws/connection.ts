@@ -1,6 +1,6 @@
 type DataListener = (frame: any) => void;
 type StateListener = (state: CONNECTION_STATE) => void;
-enum CONNECTION_STATE {
+export enum CONNECTION_STATE {
   INITIALISING = "INITIALISING",
   OPENED = "OPENED",
   CLOSED = "CLOSED",
